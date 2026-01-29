@@ -1,11 +1,13 @@
 // app/about/page.tsx
-import type { Metadata } from 'next';
-import Image from 'next/image';
+import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: 'About - Pandeli Restaurant & Bar | Sarangkot, Pokhara',
-  description: 'Discover our story – a cozy hilltop destination in Sarangkot offering authentic flavors, refreshing drinks, and breathtaking Himalayan views with warm hospitality.',
-  keywords: 'Pandeli about, Sarangkot restaurant story, Pokhara hilltop dining, Nepali hospitality',
+  title: "About - Pandeli Restaurant & Bar | Sarangkot, Pokhara",
+  description:
+    "Discover our story – a cozy hilltop destination in Sarangkot offering authentic flavors, refreshing drinks, and breathtaking Himalayan views with warm hospitality.",
+  keywords:
+    "Pandeli about, Sarangkot restaurant story, Pokhara hilltop dining, Nepali hospitality",
 };
 
 export default function AboutPage() {
@@ -39,31 +41,58 @@ export default function AboutPage() {
               OUR STORY
             </p>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2C2C2C] mb-10 sm:mb-14 leading-tight">
-              A Cozy Destination<br />in the Hills
+              A Cozy Destination
+              <br />
+              in the Hills
             </h2>
 
             <div className="grid md:grid-cols-2 gap-10 lg:gap-16 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
               <div className="space-y-6">
                 <p>
-                  <strong className="text-[#3E2723]">Nestled in the scenic hills of Sarangkot</strong>, Pandeli Restaurant and Bar offers more than just a meal—it's an experience. Our journey began with a simple vision: to create a warm, welcoming space where locals and travelers alike could enjoy delicious food, refreshing drinks, and breathtaking views.
+                  <strong className="text-[#3E2723]">
+                    Nestled in the scenic hills of Sarangkot
+                  </strong>
+                  , Pandeli Restaurant and Bar offers more than just a meal—it's
+                  an experience. Our journey began with a simple vision: to
+                  create a warm, welcoming space where locals and travelers
+                  alike could enjoy delicious food, refreshing drinks, and
+                  breathtaking views.
                 </p>
                 <p>
-                  From our carefully crafted menu featuring both local and international flavors to our cozy ambiance that invites you to relax and unwind, every detail at Pandeli is designed with you in mind.
+                  From our carefully crafted menu featuring both local and
+                  international flavors to our cozy ambiance that invites you to
+                  relax and unwind, every detail at Pandeli is designed with you
+                  in mind.
                 </p>
                 <p>
-                  Whether you're here for a hearty breakfast before a trek, a leisurely lunch with friends, or an evening drink as the sun sets over the mountains, we're here to make your visit memorable.
+                  Whether you're here for a hearty breakfast before a trek, a
+                  leisurely lunch with friends, or an evening drink as the sun
+                  sets over the mountains, we're here to make your visit
+                  memorable.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <p>
-                  Our commitment to <strong className="text-[#3E2723]">local hospitality and quality</strong> shines through in everything we do. We source fresh ingredients from nearby farms, support local producers, and take pride in serving dishes that celebrate the rich culinary heritage of Nepal while embracing global influences.
+                  Our commitment to{" "}
+                  <strong className="text-[#3E2723]">
+                    local hospitality and quality
+                  </strong>{" "}
+                  shines through in everything we do. We source fresh
+                  ingredients from nearby farms, support local producers, and
+                  take pride in serving dishes that celebrate the rich culinary
+                  heritage of Nepal while embracing global influences.
                 </p>
                 <p>
-                  The peaceful atmosphere, combined with our friendly staff and stunning location, makes Pandeli the perfect escape from the hustle and bustle. It's a place where conversations flow as freely as the drinks, and every guest becomes part of our extended family.
+                  The peaceful atmosphere, combined with our friendly staff and
+                  stunning location, makes Pandeli the perfect escape from the
+                  hustle and bustle. It's a place where conversations flow as
+                  freely as the drinks, and every guest becomes part of our
+                  extended family.
                 </p>
                 <p>
-                  Come visit us at Pandeli—where great food meets stunning views, and every moment is worth savoring.
+                  Come visit us at Pandeli—where great food meets stunning
+                  views, and every moment is worth savoring.
                 </p>
               </div>
             </div>
@@ -73,19 +102,19 @@ export default function AboutPage() {
           <div className="mt-16 lg:mt-24 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
-                icon: '🍲',
-                title: 'Authentic Flavors',
-                desc: 'A diverse menu celebrating local and international cuisine',
+                icon: "🍲",
+                title: "Authentic Flavors",
+                desc: "A diverse menu celebrating local and international cuisine",
               },
               {
-                icon: '🍹',
-                title: 'Refreshing Drinks',
-                desc: 'Carefully curated selection of beverages and cocktails',
+                icon: "🍹",
+                title: "Refreshing Drinks",
+                desc: "Carefully curated selection of beverages and cocktails",
               },
               {
-                icon: '🏞️',
-                title: 'Scenic Location',
-                desc: 'Breathtaking hilltop views of Sarangkot and beyond',
+                icon: "🏞️",
+                title: "Scenic Location",
+                desc: "Breathtaking hilltop views of Sarangkot and beyond",
               },
             ].map((card, idx) => (
               <div
@@ -112,9 +141,9 @@ export default function AboutPage() {
         <div className="container mx-auto px-5 sm:px-8 max-w-7xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
-              '/images/about-interior.jpg',   // cozy interior
-              '/images/about-kitchen.jpg',     // food prep / chef
-              '/images/about-terrace.jpg',     // outdoor terrace with view
+              "/images/about-interior.jpg", // cozy interior
+              "/images/about-kitchen.jpg", // food prep / chef
+              "/images/about-terrace.jpg", // outdoor terrace with view
               // Add more images to public/images/ as needed
             ].map((src, idx) => (
               <div
@@ -123,7 +152,7 @@ export default function AboutPage() {
               >
                 <Image
                   src={src}
-                  alt={`Pandeli ${['interior', 'kitchen', 'outdoor terrace'][idx]}`}
+                  alt={`Pandeli ${["interior", "kitchen", "outdoor terrace"][idx]}`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -140,7 +169,8 @@ export default function AboutPage() {
             Ready to Experience Pandeli?
           </h2>
           <p className="text-lg sm:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Visit us today and discover why we're Sarangkot's favorite dining destination
+            Visit us today and discover why we're Sarangkot's favorite dining
+            destination
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
