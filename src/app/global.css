@@ -1,0 +1,40 @@
+/* src/app/global.css */
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #d4af37;
+    --color-terracotta: #c1440e;
+    --color-dark-bg: #1a120f;
+    --color-cream: #f5f5dc;
+    --color-bg-light: #faf7f2;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827; /* gray-900 */
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+
+  .text-gold {
+    color: var(--color-gold);
+  }
+
+  .bg-terracotta {
+    background-color: var(--color-terracotta);
+  }
+}
+
+/* Optional: if you want dark mode or other layers */
+@layer utilities {
+  /* custom utilities here if needed */
+}
